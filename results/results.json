@@ -1,0 +1,43 @@
+{
+  "ATE_m": {
+    "VIO_only": 39.251,
+    "Loosely_coupled": 338.579,
+    "LODESTAR_no_integrity": 196.547,
+    "LODESTAR": 23.512
+  },
+  "final_drift_m": {
+    "VIO_only": 80.492,
+    "Loosely_coupled": 314.144,
+    "LODESTAR_no_integrity": 233.313,
+    "LODESTAR": 40.488
+  },
+  "spoof_detection_LODESTAR": {
+    "precision": 0.8342,
+    "recall": 1.0,
+    "f1": 0.9096,
+    "tp": 1600,
+    "fp": 318,
+    "fn": 0
+  },
+  "runtime_ms_per_update": {
+    "mean": 0.1345,
+    "p95": 0.2177,
+    "max": 1.1928
+  },
+  "config": {
+    "steps": 3000,
+    "rate_Hz": 10.0,
+    "duration_s": 300.0,
+    "n_leo": 6,
+    "spoof_windows_idx": [
+      [
+        800,
+        1400
+      ],
+      [
+        2100,
+        2500
+      ]
+    ]
+  }
+}
